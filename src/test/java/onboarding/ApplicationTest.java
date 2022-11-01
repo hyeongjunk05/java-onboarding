@@ -7,6 +7,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+
 class ApplicationTest {
     @Nested
     class Problem1Test {
@@ -37,11 +38,14 @@ class ApplicationTest {
 
     @Nested
     class Problem2Test {
+
+
         @Test
         void case1() {
             String cryptogram = "browoanoommnaon";
             String result = "brown";
             assertThat(Problem2.solution(cryptogram)).isEqualTo(result);
+
         }
 
         @Test
@@ -129,5 +133,6 @@ class ApplicationTest {
             List<String> result = List.of("andole", "jun", "bedi");
             assertThat(Problem7.solution(user, friends, visitors)).isEqualTo(result);
         }
+
     }
 }
