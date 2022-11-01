@@ -92,6 +92,6 @@ public class Problem7 {
         ArrayList<String> keySetList = new ArrayList<>(map.keySet());
         keySetList.sort((o1, o2) -> (map.get(o2).compareTo(map.get(o1))));
 
-        return keySetList;//
+        return keySetList;
     }
 }
